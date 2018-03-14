@@ -25,7 +25,12 @@ questionButton[0].onclick = function(){
 ** Question 2
 */
 questionButton[1].onclick = function(){
-    const answer = document.getElementById('buttons').value;
+    const answer = document.getElementById('buttons1').value;
     document.getElementById('q3').style.display = "block";
     document.getElementById('q2').style.display = "none";
+};
+questionButton[2].onclick = function(){
+    const answer = document.getElementById('buttons2').value;
+    document.getElementById('q4').style.display = "block";
+    document.getElementById('q3').style.display = "none";
 };
