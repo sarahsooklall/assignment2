@@ -37,6 +37,16 @@ document.getElementById('q6').style.display = "none";
 document.getElementById('q7').style.display = "none";
 
 /*
+** Array - For Gathering Questions
+*/
+const questions = [
+    document.getElementById('q1'),
+    document.getElementById('q2'),
+    document.getElementById('q3'),
+    document.getElementById('q4'),
+]
+
+/*
 ** Array - For Clickable Images
 */
 const images = [
@@ -191,6 +201,37 @@ for (let i = 0; i < images.length; i++) {
 	
 	container.appendChild(imgContainer);
 }
+
+/*
+** End Result
+*/
+//var userAnswer = '';
+//var numCorrect = 0;
+//
+//for(var i=0; i<questions.length; i++){
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//-------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
 
 /*
 ** Question 4 Option 2
