@@ -1,3 +1,50 @@
+<<<<<<< HEAD
 #q2, #q3, #q4, #q5, #q6, #q7, #q8{
     display: none;
+=======
+
+#q2, #q3, #q4, #q5, #q6, #q7, #q8{
+    display: none;
+}
+body{
+    text-align: center;
+}
+img.slide {
+	max-width: 250px;
+}
+p.caption {
+/*
+	font-family: cursive;
+	color: #000;
+*/
+}
+#button4 {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+#sweet, #sour, #spicy, #mild{
+    width: 80px;
+    height: 50px;
+    margin: 10px 10px 10px 10px;
+    font-size: 11px;
+}
+#sweet{
+    background-color: pink;
+}
+#sour{
+    background-color: greenyellow;
+}
+#spicy{
+    background-color: red;
+}
+#mild{
+    background-color: floralwhite;
+}
+#brownRice, #whiteRice, #greenSalad, #pasta, #tea, #coffee, #wine, #water {
+    width: 80px;
+    height: 50px;
+    margin: 10px 10px 10px 10px;
+    font-size: 11px;
+    background-color: white;
+>>>>>>> b0ffa9202c44b4a5e87ddc649fa5507b72abae97
 }
