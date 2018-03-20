@@ -1,8 +1,11 @@
 /*
 ** Get the users button
 */
-
-
+const startButton = document.getElementById('start')
+startButton.onclick = function (){
+    document.getElementById('q1').style.display = "block";
+    document.getElementById('box').style.display = "none";
+}
 /*
 ** Question 1
 */
@@ -70,6 +73,7 @@ const captions = [
     "White Chocolate", 
     "Dark Chocolate"
 ];
+const container = document.getElementById("q4");
 for (let i = 0; i < images.length; i++) {
     
     const imgContainer = document.createElement('div');
@@ -79,11 +83,11 @@ for (let i = 0; i < images.length; i++) {
     img.id = "img"+i;
     img.classList.add("slide");
     
-//    img.onclick = function() {
-//        const index = this.id.split("img")[1];
-//       document.getElementById('q4').style.display = "none";
-//       document.getElementById('q5').style.display = "block";
-//    };
+    img.onclick = function() {
+        const index = this.id.split("img")[1];
+       document.getElementById('q4').style.display = "none";
+       document.getElementById('q5').style.display = "block";
+    };
     
     imgContainer.appendChild(img);
     
@@ -92,60 +96,46 @@ for (let i = 0; i < images.length; i++) {
     caption.textContent = captions[i];
     imgContainer.appendChild(caption);
     
-    body.appendChild(imgContainer);
+    container.appendChild(imgContainer);
 }
-//const questionButton4 = [
-//    document.getElementById('TeaT'),
-//    document.getElementById('CoffeeT'),
-//    document.getElementById('WineT'),
-//    document.getElementById('WaterT'),
-//]
-//questionButton4[0].onclick = function(){
-//    const answer = document.getElementById('buttons4').value;
-//    document.getElementById('q4').style.display = "block";
-//    document.getElementById('q3').style.display = "none";
-//};
-//questionButton4[1].onclick = function(){
-//    const answer = document.getElementById('buttons4').value;
-//    document.getElementById('q4').style.display = "block";
-//    document.getElementById('q3').style.display = "none";
-//};
-//questionButton4[2].onclick = function(){
-//    const answer = document.getElementById('buttons4').value;
-//    document.getElementById('q4').style.display = "block";
-//    document.getElementById('q3').style.display = "none";
-//};
-//questionButton4[3].onclick = function(){
-//    const answer = document.getElementById('buttons4').value;
-//    document.getElementById('q4').style.display = "block";
-//    document.getElementById('q3').style.display = "none";
-//};
 /*
-** Question 5
+** Question 
 */
-//const questionButton5 = [
-//    document.getElementById('blue'),
-//    document.getElementById('red'),
-//    document.getElementById('grey'),
-//    document.getElementById('yellow'),
-//]
-//questionButton5[0].onclick = function(){
-//    const answer = document.getElementById('buttons5').value;
-//    document.getElementById('q2').style.display = "block";
-//    document.getElementById('q1').style.display = "none";
-//};
-//questionButton5[1].onclick = function(){
-//    const answer = document.getElementById('buttons5').value;
-//    document.getElementById('q2').style.display = "block";
-//    document.getElementById('q1').style.display = "none";
-//};
-//questionButton5[2].onclick = function(){
-//    const answer = document.getElementById('buttons5').value;
-//    document.getElementById('q2').style.display = "block";
-//    document.getElementById('q1').style.display = "none";
-//};
-//questionButton5[3].onclick = function(){
-//    const answer = document.getElementById('buttons5').value;
-//    document.getElementById('q2').style.display = "block";
-//    document.getElementById('q1').style.display = "none";
-//};
+const meatImages = [
+    "images/Peking-Duck.jpg", 
+    "images/steak.jpg", 
+    "images/Wild-Game.jpg", 
+    "images/lamb.jpg"
+];
+const meatCaptions = [
+    "Peking-Duck", 
+    "Steak", 
+    "Wild-Game", 
+    "Lamb"
+];
+const meatContainer = document.getElementById("q5");
+for (let i = 0; i < images.length; i++) {
+    
+    const imgContainer = document.createElement('div');
+    
+    const img = new Image();
+    img.src = meatImages[i];
+    img.id = "img"+i;
+    img.classList.add("slide");
+    
+    img.onclick = function() {
+        const index = this.id.split("img")[1];
+       document.getElementById('q5').style.display = "none";
+       document.getElementById('q6').style.display = "block";
+    };
+    
+    imgContainer.appendChild(img);
+    
+    const caption = document.createElement('p');
+    caption.classList.add("meatCaptions");
+    caption.textContent = meatCaptions[i];
+    imgContainer.appendChild(caption);
+    
+    meatContainer.appendChild(imgContainer);
+}
+

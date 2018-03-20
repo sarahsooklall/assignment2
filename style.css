@@ -1,25 +1,28 @@
-#q2, #q3, #q4, #q5, #q6, #q7, #q8{
-    display: none;
-}
 body{
     text-align: center;
 }
+#start{
+    background-color: #00a2d5;
+    color:white;
+    border-radius: 20px;
+    padding:15px;
+    font-size: 3em;
+}
+#q1,#q2, #q3, #q4, #q5, #q6, #q7, #q8{
+    display: none;
+}
 img.slide {
 	max-width: 250px;
-}
-p.caption {
-/*
-	font-family: cursive;
-	color: #000;
-*/
 }
 #button4 {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 }
 #sweet, #sour, #spicy, #mild{
+
     width: 80px;
     height: 50px;
+    border-radius: 5px;
     margin: 10px 10px 10px 10px;
     font-size: 11px;
 }
@@ -36,8 +39,10 @@ p.caption {
     background-color: floralwhite;
 }
 #brownRice, #whiteRice, #greenSalad, #pasta, #tea, #coffee, #wine, #water {
+
     width: 80px;
     height: 50px;
+    border-radius: 5px;
     margin: 10px 10px 10px 10px;
     font-size: 11px;
     background-color: white;
