@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-#q2, #q3, #q4, #q5, #q6, #q7, #q8{
-    display: none;
-=======
-
 #q2, #q3, #q4, #q5, #q6, #q7, #q8{
     display: none;
 }
@@ -46,5 +41,4 @@ p.caption {
     margin: 10px 10px 10px 10px;
     font-size: 11px;
     background-color: white;
->>>>>>> b0ffa9202c44b4a5e87ddc649fa5507b72abae97
 }
