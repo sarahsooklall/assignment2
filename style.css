@@ -56,3 +56,12 @@ h5{
     max-height:700px;
     min-height:700px;
 }
+article{
+    font-size:30px;
+}
+h2{
+   margin: auto;
+   margin-top: 20px;
+   margin-bottom: 20px;
+   width: 995px;
+}

@@ -423,7 +423,7 @@ document.getElementById("comfortimg0").onclick = function() {
 	answerContinent.america++;
     console.log(answerContinent);
     document.getElementById('q7').style.display = "none";
-    document.getElementById('endResult').style.display = "grid";
+    document.getElementById('endResult').style.display = "block";
     endResult.appendChild(message);
     
     var img = document.createElement('img');
@@ -452,7 +452,7 @@ document.getElementById("comfortimg1").onclick = function(){
     answerContinent.asia++;
     console.log(answerContinent);
     document.getElementById('q7').style.display = "none";
-    document.getElementById('endResult').style.display = "grid";
+    document.getElementById('endResult').style.display = "block";
     endResult.appendChild(message);
     var img = document.createElement('img');
     
@@ -480,7 +480,7 @@ document.getElementById("comfortimg2").onclick = function() {
     answerContinent.europe++;
     console.log(answerContinent);
     document.getElementById('q7').style.display = "none";
-    document.getElementById('endResult').style.display = "grid";
+    document.getElementById('endResult').style.display = "block";
     endResult.appendChild(message);
     
     var img = document.createElement('img');
@@ -509,7 +509,7 @@ document.getElementById("comfortimg3").onclick = function() {
     answerContinent.africa++;
     console.log(answerContinent);
     document.getElementById('q7').style.display = "none";
-    document.getElementById('endResult').style.display = "grid";
+    document.getElementById('endResult').style.display = "block";
     endResult.appendChild(message);
     
     var img = document.createElement('img');
