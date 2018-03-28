@@ -1,16 +1,36 @@
 body{
+    font-family: Helvetica, sans-serif;
     text-align: center;
+    background-color: #f4f4f4;
+    margin: auto;
+    width: 995px;
 }
 #start{
-    background-color: #00a2d5;
-    color:white;
+/*    background-color: #00a2d5;*/
+    background-color: #57bc90;
+    color:#fff;
     border-radius: 20px;
     padding:15px;
     font-size: 3em;
+    cursor: pointer;
 }
 #q1,#q2, #q3, #q4, #q5, #q6, #endResult{
     display: none;
 }
 img.slide {
 	max-width: 250px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+h1, h2{
+    color: #015249;
+}
+h5{
+    text-align: right;
+    padding:15px;
+    border-radius: 20px;
+    background-color: #77c9d4;
+    color: #fff;
+    margin-top: 0;
+    letter-spacing: 1px;
 }

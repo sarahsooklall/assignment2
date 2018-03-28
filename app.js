@@ -5,6 +5,8 @@ const startButton = document.getElementById('start')
 startButton.onclick = function (){
     document.getElementById('q1').style.display = "block";
     document.getElementById('box').style.display = "none";
+    console.log("Let's Begin :)");
+    console.log("Note: CLICK ON THE IMAGES." + " Finish the game to get your result.");
 }
 
 //For Score - To Start At Zero
@@ -31,6 +33,7 @@ const captions = [
     "Mild"
 ];
 const container = document.getElementById("q1");
+//Loop for Images and captions
 for (let i = 0; i < 4; i++) {
     
     const imgContainer = document.createElement('div');
@@ -39,32 +42,6 @@ for (let i = 0; i < 4; i++) {
     img.src = images[i];
     img.id = "img"+i;
     img.classList.add("slide");
-    images[i];
-    
-    images[0].onclick = function() {
-		answerContinent.africa++;
-        console.log(answerContinent.africa);
-        document.getElementById('q1').style.display = "none";
-        document.getElementById('q2').style.display = "block";
-	};
-    images[1].onclick = function() {
-        answerContinent.europe++;
-        console.log(answerContinent.europe);
-        document.getElementById('q1').style.display = "none";
-        document.getElementById('q2').style.display = "block";
-    };
-    images[2].onclick = function() {
-        answerContinent.asia++;
-        console.log(answerContinent.asia);
-        document.getElementById('q1').style.display = "none";
-        document.getElementById('q2').style.display = "block";
-    };
-    images[3].onclick = function() {
-        answerContinent.america++;
-        console.log(answerContinent.america);
-        document.getElementById('q1').style.display = "none";
-        document.getElementById('q2').style.display = "block";
-    };
         
     imgContainer.appendChild(img);
     
@@ -74,6 +51,31 @@ for (let i = 0; i < 4; i++) {
     imgContainer.appendChild(caption);
     
     container.appendChild(imgContainer);
+};
+// For clickable images lead to the next page, and display No.
+document.getElementById("img0").onclick = function() {
+	answerContinent.africa++;
+    console.log(answerContinent);
+    document.getElementById('q1').style.display = "none";
+    document.getElementById('q2').style.display = "block";
+};
+document.getElementById("img1").onclick = function() {
+    answerContinent.europe++;
+    console.log(answerContinent);
+    document.getElementById('q1').style.display = "none";
+    document.getElementById('q2').style.display = "block";
+};
+document.getElementById("img2").onclick = function() {
+    answerContinent.asia++;
+    console.log(answerContinent);
+    document.getElementById('q1').style.display = "none";
+    document.getElementById('q2').style.display = "block";
+};
+document.getElementById("img3").onclick = function() {
+    answerContinent.america++;
+    console.log(answerContinent);
+    document.getElementById('q1').style.display = "none";
+    document.getElementById('q2').style.display = "block";
 };
 
 /*
@@ -92,40 +94,15 @@ const baseCaptions = [
     "Pasta"
 ];
 const baseContainer = document.getElementById("q2");
-for (let i = 4; i < 8; i++) {
+//Loop for Images and captions
+for (let i = 0; i < 4; i++) {
     
     const imgContainer = document.createElement('div');
     
     const img = new Image();
     img.src = baseImages[i];
-    img.id = "img"+i;
+    img.id = "baseimg"+i;
     img.classList.add("slide");
-    baseImages[i];
-    
-    baseImages[0].onclick = function() {
-		answerContinent.africa++;
-        console.log(answerContinent.africa);
-        document.getElementById('q2').style.display = "none";
-        document.getElementById('q3').style.display = "block";
-	};
-    baseImages[1].onclick = function() {
-        answerContinent.europe++;
-        console.log(answerContinent.europe);
-        document.getElementById('q2').style.display = "none";
-        document.getElementById('q3').style.display = "block";
-    };
-    baseImages[2].onclick = function() {
-        answerContinent.asia++;
-        console.log(answerContinent.asia);
-        document.getElementById('q2').style.display = "none";
-        document.getElementById('q3').style.display = "block";
-    };
-    baseImages[3].onclick = function() {
-        answerContinent.america++;
-        console.log(answerContinent.america);
-        document.getElementById('q2').style.display = "none";
-        document.getElementById('q3').style.display = "block";
-    };
     
     imgContainer.appendChild(img);
     
@@ -135,6 +112,31 @@ for (let i = 4; i < 8; i++) {
     imgContainer.appendChild(caption);
     
     baseContainer.appendChild(imgContainer);
+};
+// For clickable images lead to the next page, and display No.
+document.getElementById("baseimg0").onclick = function() {
+	answerContinent.africa++;
+    console.log(answerContinent);
+    document.getElementById('q2').style.display = "none";
+    document.getElementById('q3').style.display = "block";
+};
+document.getElementById("baseimg1").onclick = function() {
+    answerContinent.europe++;
+    console.log(answerContinent);
+    document.getElementById('q2').style.display = "none";
+    document.getElementById('q3').style.display = "block";
+};
+document.getElementById("baseimg2").onclick = function() {
+    answerContinent.asia++;
+    console.log(answerContinent);
+    document.getElementById('q2').style.display = "none";
+    document.getElementById('q3').style.display = "block";
+};
+document.getElementById("baseimg3").onclick = function() {
+    answerContinent.america++;
+    console.log(answerContinent);
+    document.getElementById('q2').style.display = "none";
+    document.getElementById('q3').style.display = "block";
 };
 
 /*
@@ -153,40 +155,16 @@ const beverageCaptions = [
     "Water"
 ];
 const beverageContainer = document.getElementById("q3");
-for (let i = 8; i < 12; i++) {
+//Loop for Images and captions
+for (let i = 0; i < 4; i++) {
     
     const imgContainer = document.createElement('div');
     
     const img = new Image();
     img.src = beverageImages[i];
-    img.id = "img"+i;
+    img.id = "beverageimg"+i;
     img.classList.add("slide");
     beverageImages[i];
-    
-    beverageImages[0].onclick = function() {
-		answerContinent.africa++;
-        console.log(answerContinent.africa);
-        document.getElementById('q3').style.display = "none";
-        document.getElementById('q4').style.display = "block";
-	};
-    beverageImages[1].onclick = function() {
-        answerContinent.europe++;
-        console.log(answerContinent.europe);
-        document.getElementById('q3').style.display = "none";
-        document.getElementById('q4').style.display = "block";
-    };
-    beverageImages[2].onclick = function() {
-        answerContinent.asia++;
-        console.log(answerContinent.asia);
-        document.getElementById('q3').style.display = "none";
-        document.getElementById('q4').style.display = "block";
-    };
-    beverageImages[3].onclick = function() {
-        answerContinent.america++;
-        console.log(answerContinent.america);
-        document.getElementById('q3').style.display = "none";
-        document.getElementById('q4').style.display = "block";
-    };
     
     imgContainer.appendChild(img);
     
@@ -196,6 +174,31 @@ for (let i = 8; i < 12; i++) {
     imgContainer.appendChild(caption);
     
     beverageContainer.appendChild(imgContainer);
+};
+// For clickable images lead to the next page, and display No.
+document.getElementById("beverageimg0").onclick = function() {
+	answerContinent.africa++;
+    console.log(answerContinent);
+    document.getElementById('q3').style.display = "none";
+    document.getElementById('q4').style.display = "block";
+};
+document.getElementById("beverageimg1").onclick = function() {
+    answerContinent.europe++;
+    console.log(answerContinent);
+    document.getElementById('q3').style.display = "none";
+    document.getElementById('q4').style.display = "block";
+};
+document.getElementById("beverageimg2").onclick = function() {
+    answerContinent.asia++;
+    console.log(answerContinent);
+    document.getElementById('q3').style.display = "none";
+    document.getElementById('q4').style.display = "block";
+};
+document.getElementById("beverageimg3").onclick = function() {
+    answerContinent.america++;
+    console.log(answerContinent);
+    document.getElementById('q3').style.display = "none";
+    document.getElementById('q4').style.display = "block";
 };
 
 /*
@@ -214,40 +217,15 @@ const perferCaptions = [
     "Dark Chocolate"
 ]
 const perferContainer = document.getElementById("q4");
-for (let i = 12; i < 16; i++) {
+//Loop for Images and captions
+for (let i = 0; i < 4; i++) {
     
     const imgContainer = document.createElement('div');
     
     const img = new Image();
     img.src = perferImages[i];
-    img.id = "img"+i;
+    img.id = "perferimg"+i;
     img.classList.add("slide");
-    perferImages[i];
-    
-    perferImages[0].onclick = function() {
-		answerContinent.africa++;
-        console.log(answerContinent.africa);
-        document.getElementById('q4').style.display = "none";
-        document.getElementById('q5').style.display = "block";
-	};
-    perferImages[1].onclick = function() {
-        answerContinent.europe++;
-        console.log(answerContinent.europe);
-        document.getElementById('q4').style.display = "none";
-        document.getElementById('q5').style.display = "block";
-    };
-    perferImages[2].onclick = function() {
-        answerContinent.asia++;
-        console.log(answerContinent.asia);
-        document.getElementById('q4').style.display = "none";
-        document.getElementById('q5').style.display = "block";
-    };
-    perferImages[3].onclick = function() {
-        answerContinent.america++;
-        console.log(answerContinent.america);
-        document.getElementById('q4').style.display = "none";
-        document.getElementById('q5').style.display = "block";
-    };
     
     imgContainer.appendChild(img);
     
@@ -257,6 +235,31 @@ for (let i = 12; i < 16; i++) {
     imgContainer.appendChild(caption);
     
     perferContainer.appendChild(imgContainer);
+};
+// For clickable images lead to the next page, and display No.
+document.getElementById("perferimg0").onclick = function() {
+	answerContinent.africa++;
+    console.log(answerContinent);
+    document.getElementById('q4').style.display = "none";
+    document.getElementById('q5').style.display = "block";
+};
+document.getElementById("perferimg1").onclick = function() {
+    answerContinent.europe++;
+    console.log(answerContinent);
+    document.getElementById('q4').style.display = "none";
+    document.getElementById('q5').style.display = "block";
+};
+document.getElementById("perferimg2").onclick = function() {
+    answerContinent.asia++;
+    console.log(answerContinent);
+    document.getElementById('q4').style.display = "none";
+    document.getElementById('q5').style.display = "block";
+};
+document.getElementById("perferimg3").onclick = function() {
+    answerContinent.america++;
+    console.log(answerContinent);
+    document.getElementById('q4').style.display = "none";
+    document.getElementById('q5').style.display = "block";
 };
 
 /*
@@ -275,40 +278,15 @@ const meatCaptions = [
     "Lamb"
 ];
 const meatContainer = document.getElementById("q5");
-for (let i = 16; i < 20; i++) {
+//Loop for Images and captions
+for (let i = 0; i < 4; i++) {
     
 const imgContainer = document.createElement('div');
     
     const img = new Image();
     img.src = meatImages[i];
-    img.id = "img"+i;
+    img.id = "meatimg"+i;
     img.classList.add("slide");
-    meatImages[i];
-    
-    meatImages[0].onclick = function() {
-		answerContinent.africa++;
-        console.log(answerContinent.africa);
-        document.getElementById('q5').style.display = "none";
-        document.getElementById('q6').style.display = "block";
-	};
-    meatImages[1].onclick = function() {
-        answerContinent.europe++;
-        console.log(answerContinent.europe);
-        document.getElementById('q5').style.display = "none";
-        document.getElementById('q6').style.display = "block";
-    };
-    meatImages[2].onclick = function() {
-        answerContinent.asia++;
-        console.log(answerContinent.asia);
-        document.getElementById('q5').style.display = "none";
-        document.getElementById('q6').style.display = "block";
-    };
-    meatImages[3].onclick = function() {
-        answerContinent.america++;
-        console.log(answerContinent.america);
-        document.getElementById('q5').style.display = "none";
-        document.getElementById('q6').style.display = "block";
-    };
     
     imgContainer.appendChild(img);
     
@@ -318,6 +296,31 @@ const imgContainer = document.createElement('div');
     imgContainer.appendChild(caption);
     
     meatContainer.appendChild(imgContainer);
+};
+// For clickable images lead to the next page, and display No.
+document.getElementById("meatimg0").onclick = function() {
+	answerContinent.africa++;
+    console.log(answerContinent);
+    document.getElementById('q5').style.display = "none";
+    document.getElementById('q6').style.display = "block";
+};
+document.getElementById("meatimg1").onclick = function() {
+    answerContinent.europe++;
+    console.log(answerContinent);
+    document.getElementById('q5').style.display = "none";
+    document.getElementById('q6').style.display = "block";
+};
+document.getElementById("meatimg2").onclick = function() {
+    answerContinent.asia++;
+    console.log(answerContinent);
+    document.getElementById('q5').style.display = "none";
+    document.getElementById('q6').style.display = "block";
+};
+document.getElementById("meatimg3").onclick = function() {
+    answerContinent.america++;
+    console.log(answerContinent);
+    document.getElementById('q5').style.display = "none";
+    document.getElementById('q6').style.display = "block";
 };
 
 /*
@@ -336,40 +339,16 @@ const comfortCaptions = [
     "Fried Chicken"
 ];
 const comfortContainer = document.getElementById("q6");
-for (let i = 20; i < 24; i++) {
+// To display images and captions
+for (let i = 0; i < 4; i++) {
     
     const imgContainer = document.createElement('div');
     
     const img = new Image();
     img.src = comfortImages[i];
-    img.id = "img"+i;
+    img.id = "comfortimg"+i;
     img.classList.add("slide");
     comfortImages[i];
-    
-    comfortImages[0].onclick = function() {
-		answerContinent.africa++;
-        console.log(answerContinent.africa);
-        document.getElementById('q6').style.display = "none";
-        document.getElementById('endResult').style.display = "block";
-	};
-    comfortImages[1].onclick = function() {
-        answerContinent.europe++;
-        console.log(answerContinent.europe);
-        document.getElementById('q6').style.display = "none";
-        document.getElementById('endResult').style.display = "block";
-    };
-    comfortImages[2].onclick = function() {
-        answerContinent.asia++;
-        console.log(answerContinent.asia);
-        document.getElementById('q6').style.display = "none";
-        document.getElementById('endResult').style.display = "block";
-    };
-    comfortImages[3].onclick = function() {
-        answerContinent.america++;
-        console.log(answerContinent.america);
-        document.getElementById('q6').style.display = "none";
-        document.getElementById('endResult').style.display = "block";
-    };
     
     imgContainer.appendChild(img);
     
@@ -380,35 +359,68 @@ for (let i = 20; i < 24; i++) {
     
     comfortContainer.appendChild(imgContainer);
 };
+// For clickable images lead to the next page, and display No.
+document.getElementById("comfortimg0").onclick = function() {
+	answerContinent.africa++;
+    console.log(answerContinent);
+    document.getElementById('q6').style.display = "none";
+    document.getElementById('endResult').style.display = "block";
+};
+document.getElementById("comfortimg1").onclick = function() {
+    answerContinent.europe++;
+    console.log(answerContinent);
+    document.getElementById('q6').style.display = "none";
+    document.getElementById('endResult').style.display = "block";
+};
+document.getElementById("comfortimg2").onclick = function() {
+    answerContinent.asia++;
+    console.log(answerContinent);
+    document.getElementById('q6').style.display = "none";
+    document.getElementById('endResult').style.display = "block";
+};
+document.getElementById("comfortimg3").onclick = function() {
+    answerContinent.america++;
+    console.log(answerContinent);
+    document.getElementById('q6').style.display = "none";
+    document.getElementById('endResult').style.display = "block";
+};
 
 /*
 ** End Result
 */
-//function end() {
-//    
-//    var answerCont = [
-//    "Africa",
-//    "Europe",
-//    "Asia",
-//    "America"
-//    ];
+function end() {
     
-    // Creating new element for answer
-//    var answer = document.createElement("h4");
-//    document.body.appendChild(answer);
-//    
-//    var score;
-//    
-//    if (answerContinent.africa < 2 ){
-//        answer.textContent = answerCont[0];
-//    }else if (answerContinent.europe < 2 ){
-//        answer.textContent = answerCont[1];
-//    }else if (answerContinent.asia < 2 ){
-//        answer.textContent = answerCont[2];
-//    }else if (answerContinent.america < 2 ){
-//        answer.textContent = answerCont[3];
-//    }else {
-//        answer.textContent != answerCont;
-//    }
-//    
-//};
+    var answerCont = [
+    "Africa",
+    "Europe",
+    "Asia",
+    "America"
+    ];
+    
+    // Creating new element for results
+    var answer = document.createElement("h4");
+    document.body.appendChild(answer);
+    
+    // To make result visable and display reuslt message
+    const result = document.getElementById('endResult');
+    const message = document.createElement("p");
+	document.body.appendChild(message); 
+    
+    if (answerContinent.africa >= 2 ){
+        answer.textContent = answerCont[0];
+        message.textContent = "Yay!!";
+        console.log("yay.");
+    }else if (answerContinent.europe >= 2 ){
+        answer.textContent = answerCont[1];
+        console.log("yay.");
+    }else if (answerContinent.asia >= 2 ){
+        answer.textContent = answerCont[2];
+        console.log("yay.");
+    }else if (answerContinent.america >= 2 ){
+        answer.textContent = answerCont[3];
+        console.log("yay.");
+    }else {
+        answer.textContent != answerCont;
+    }
+    
+};
