@@ -61,7 +61,18 @@ article{
 }
 h2{
    margin: auto;
-   margin-top: 20px;
-   margin-bottom: 20px;
+   margin-top: 50px;
+   margin-bottom: 50px;
    width: 995px;
+}
+.captions, .baseCaptions, .beverageCaptions, .perferCaptions, .meatCaptions,  .dishCaptions, .comfortCaptions {
+/*    background-color: #57bc90;*/
+/*    color:#fff;*/
+    border-radius: 20px;
+    padding:15px;
+    margin-left:120px;
+    margin-right:120px;
+    margin-top: 5px;
+    margin-bottom: 50px;
+    font-size: 30px;
 }
