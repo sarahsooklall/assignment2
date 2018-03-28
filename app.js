@@ -3,7 +3,7 @@
 */
 const startButton = document.getElementById('start')
 startButton.onclick = function (){
-    document.getElementById('q1').style.display = "block";
+    document.getElementById('q1').style.display = "grid";
     document.getElementById('box').style.display = "none";
     console.log("Let's Begin :)");
     console.log("Note: CLICK ON THE IMAGES." + " Finish the game to get your result.");
@@ -16,7 +16,6 @@ var answerContinent = {
     asia: 0,
     america: 0
 };
-
 /*
 ** Question 1
 */
@@ -54,28 +53,28 @@ for (let i = 0; i < 4; i++) {
 };
 // For clickable images lead to the next page, and display No.
 document.getElementById("img0").onclick = function() {
-	answerContinent.africa++;
+	answerContinent.asia++;
     console.log(answerContinent);
     document.getElementById('q1').style.display = "none";
-    document.getElementById('q2').style.display = "block";
+    document.getElementById('q2').style.display = "grid";
 };
 document.getElementById("img1").onclick = function() {
-    answerContinent.europe++;
-    console.log(answerContinent);
-    document.getElementById('q1').style.display = "none";
-    document.getElementById('q2').style.display = "block";
-};
-document.getElementById("img2").onclick = function() {
-    answerContinent.asia++;
-    console.log(answerContinent);
-    document.getElementById('q1').style.display = "none";
-    document.getElementById('q2').style.display = "block";
-};
-document.getElementById("img3").onclick = function() {
     answerContinent.america++;
     console.log(answerContinent);
     document.getElementById('q1').style.display = "none";
-    document.getElementById('q2').style.display = "block";
+    document.getElementById('q2').style.display = "grid";
+};
+document.getElementById("img2").onclick = function() {
+    answerContinent.africa++;
+    console.log(answerContinent);
+    document.getElementById('q1').style.display = "none";
+    document.getElementById('q2').style.display = "grid";
+};
+document.getElementById("img3").onclick = function() {
+    answerContinent.europe++;
+    console.log(answerContinent);
+    document.getElementById('q1').style.display = "none";
+    document.getElementById('q2').style.display = "grid";
 };
 
 /*
@@ -118,25 +117,25 @@ document.getElementById("baseimg0").onclick = function() {
 	answerContinent.africa++;
     console.log(answerContinent);
     document.getElementById('q2').style.display = "none";
-    document.getElementById('q3').style.display = "block";
+    document.getElementById('q3').style.display = "grid";
 };
 document.getElementById("baseimg1").onclick = function() {
-    answerContinent.europe++;
-    console.log(answerContinent);
-    document.getElementById('q2').style.display = "none";
-    document.getElementById('q3').style.display = "block";
-};
-document.getElementById("baseimg2").onclick = function() {
     answerContinent.asia++;
     console.log(answerContinent);
     document.getElementById('q2').style.display = "none";
-    document.getElementById('q3').style.display = "block";
+    document.getElementById('q3').style.display = "grid";
 };
-document.getElementById("baseimg3").onclick = function() {
+document.getElementById("baseimg2").onclick = function() {
     answerContinent.america++;
     console.log(answerContinent);
     document.getElementById('q2').style.display = "none";
-    document.getElementById('q3').style.display = "block";
+    document.getElementById('q3').style.display = "grid";
+};
+document.getElementById("baseimg3").onclick = function() {
+    answerContinent.europe++;
+    console.log(answerContinent);
+    document.getElementById('q2').style.display = "none";
+    document.getElementById('q3').style.display = "grid";
 };
 
 /*
@@ -177,28 +176,28 @@ for (let i = 0; i < 4; i++) {
 };
 // For clickable images lead to the next page, and display No.
 document.getElementById("beverageimg0").onclick = function() {
-	answerContinent.africa++;
+	answerContinent.asia++;
     console.log(answerContinent);
     document.getElementById('q3').style.display = "none";
-    document.getElementById('q4').style.display = "block";
+    document.getElementById('q4').style.display = "grid";
 };
 document.getElementById("beverageimg1").onclick = function() {
-    answerContinent.europe++;
-    console.log(answerContinent);
-    document.getElementById('q3').style.display = "none";
-    document.getElementById('q4').style.display = "block";
-};
-document.getElementById("beverageimg2").onclick = function() {
-    answerContinent.asia++;
-    console.log(answerContinent);
-    document.getElementById('q3').style.display = "none";
-    document.getElementById('q4').style.display = "block";
-};
-document.getElementById("beverageimg3").onclick = function() {
     answerContinent.america++;
     console.log(answerContinent);
     document.getElementById('q3').style.display = "none";
-    document.getElementById('q4').style.display = "block";
+    document.getElementById('q4').style.display = "grid";
+};
+document.getElementById("beverageimg2").onclick = function() {
+    answerContinent.europe++;
+    console.log(answerContinent);
+    document.getElementById('q3').style.display = "none";
+    document.getElementById('q4').style.display = "grid";
+};
+document.getElementById("beverageimg3").onclick = function() {
+    answerContinent.africa++;
+    console.log(answerContinent);
+    document.getElementById('q3').style.display = "none";
+    document.getElementById('q4').style.display = "grid";
 };
 
 /*
@@ -238,28 +237,28 @@ for (let i = 0; i < 4; i++) {
 };
 // For clickable images lead to the next page, and display No.
 document.getElementById("perferimg0").onclick = function() {
-	answerContinent.africa++;
+	answerContinent.asia++;
     console.log(answerContinent);
     document.getElementById('q4').style.display = "none";
-    document.getElementById('q5').style.display = "block";
+    document.getElementById('q5').style.display = "grid";
 };
 document.getElementById("perferimg1").onclick = function() {
+    answerContinent.africa++;
+    console.log(answerContinent);
+    document.getElementById('q4').style.display = "none";
+    document.getElementById('q5').style.display = "grid";
+};
+document.getElementById("perferimg2").onclick = function() {
     answerContinent.europe++;
     console.log(answerContinent);
     document.getElementById('q4').style.display = "none";
-    document.getElementById('q5').style.display = "block";
-};
-document.getElementById("perferimg2").onclick = function() {
-    answerContinent.asia++;
-    console.log(answerContinent);
-    document.getElementById('q4').style.display = "none";
-    document.getElementById('q5').style.display = "block";
+    document.getElementById('q5').style.display = "grid";
 };
 document.getElementById("perferimg3").onclick = function() {
     answerContinent.america++;
     console.log(answerContinent);
     document.getElementById('q4').style.display = "none";
-    document.getElementById('q5').style.display = "block";
+    document.getElementById('q5').style.display = "grid";
 };
 
 /*
@@ -299,32 +298,89 @@ const imgContainer = document.createElement('div');
 };
 // For clickable images lead to the next page, and display No.
 document.getElementById("meatimg0").onclick = function() {
-	answerContinent.africa++;
+	answerContinent.asia++;
     console.log(answerContinent);
     document.getElementById('q5').style.display = "none";
-    document.getElementById('q6').style.display = "block";
+    document.getElementById('q6').style.display = "grid";
 };
 document.getElementById("meatimg1").onclick = function() {
-    answerContinent.europe++;
-    console.log(answerContinent);
-    document.getElementById('q5').style.display = "none";
-    document.getElementById('q6').style.display = "block";
-};
-document.getElementById("meatimg2").onclick = function() {
-    answerContinent.asia++;
-    console.log(answerContinent);
-    document.getElementById('q5').style.display = "none";
-    document.getElementById('q6').style.display = "block";
-};
-document.getElementById("meatimg3").onclick = function() {
     answerContinent.america++;
     console.log(answerContinent);
     document.getElementById('q5').style.display = "none";
-    document.getElementById('q6').style.display = "block";
+    document.getElementById('q6').style.display = "grid";
+};
+document.getElementById("meatimg2").onclick = function() {
+    answerContinent.africa++;
+    console.log(answerContinent);
+    document.getElementById('q5').style.display = "none";
+    document.getElementById('q6').style.display = "grid";
+};
+document.getElementById("meatimg3").onclick = function() {
+    answerContinent.europe++;
+    console.log(answerContinent);
+    document.getElementById('q5').style.display = "none";
+    document.getElementById('q6').style.display = "grid";
+};
+/*
+** Question 5
+*/
+const dishImages = [
+    "images/african-dish.jpg", 
+    "images/asian-dish.jpg", 
+    "images/europ-dish.jpg", 
+    "images/american-dish.jpeg"
+];
+const dishCaptions = [
+   
+];
+const dishContainer = document.getElementById("q6");
+//Loop for Images and captions
+for (let i = 0; i < 4; i++) {
+    
+const imgContainer = document.createElement('div');
+    
+    const img = new Image();
+    img.src = dishImages[i];
+    img.id = "dishing"+i;
+    img.classList.add("slide");
+    
+    imgContainer.appendChild(img);
+    
+    const caption = document.createElement('p');
+    caption.classList.add("dishCaptions");
+    caption.textContent = dishCaptions[i];
+    imgContainer.appendChild(caption);
+    
+    dishContainer.appendChild(imgContainer);
+};
+// For clickable images lead to the next page, and display No.
+document.getElementById("dishing0").onclick = function() {
+	answerContinent.africa++;
+    console.log(answerContinent);
+    document.getElementById('q6').style.display = "none";
+    document.getElementById('q7').style.display = "grid";
+};
+document.getElementById("dishing1").onclick = function() {
+    answerContinent.asia++;
+    console.log(answerContinent);
+    document.getElementById('q6').style.display = "none";
+    document.getElementById('q7').style.display = "grid";
+};
+document.getElementById("dishing2").onclick = function() {
+    answerContinent.europe++;
+    console.log(answerContinent);
+    document.getElementById('q6').style.display = "none";
+    document.getElementById('q7').style.display = "grid";
+};
+document.getElementById("dishing3").onclick = function() {
+    answerContinent.america++;
+    console.log(answerContinent);
+    document.getElementById('q6').style.display = "none";
+    document.getElementById('q7').style.display = "grid";
 };
 
 /*
-** Question 6
+** Question 7
 */
 const comfortImages = [
     "images/pizza.jpg", 
@@ -338,7 +394,10 @@ const comfortCaptions = [
     "Ice Cream", 
     "Fried Chicken"
 ];
-const comfortContainer = document.getElementById("q6");
+   
+const comfortContainer = document.getElementById("q7");
+const result = document.getElementById('endResult');
+const message = document.createElement('article');
 // To display images and captions
 for (let i = 0; i < 4; i++) {
     
@@ -361,66 +420,117 @@ for (let i = 0; i < 4; i++) {
 };
 // For clickable images lead to the next page, and display No.
 document.getElementById("comfortimg0").onclick = function() {
-	answerContinent.africa++;
+	answerContinent.america++;
     console.log(answerContinent);
-    document.getElementById('q6').style.display = "none";
-    document.getElementById('endResult').style.display = "block";
+    document.getElementById('q7').style.display = "none";
+    document.getElementById('endResult').style.display = "grid";
+    endResult.appendChild(message);
+    
+    var img = document.createElement('img');
+    
+    img.classList.add("IMAGES");
+
+     if (answerContinent.asia++ >= 3) {
+         img.src = "images/asian-food.jpg";
+            document.body.appendChild(img);
+            message.textContent ="Travel to Asian! Your stomach will be satisfied with their food!";
+        }else if(answerContinent.europe >= 3){
+            img.src = "images/europe-food.jpg";
+            message.textContent ="Travel to Europe! Your stomach will be satisfied with their food!";
+            document.body.appendChild(img);   
+        }else if(answerContinent.africa >= 3){
+            img.src = "images/african-food.png";
+            message.textContent ="Travel to African! Your stomach will be satisfied with their food!";
+            document.body.appendChild(img);  
+        }else if(answerContinent.america >= 3){
+            img.src = "images/america-food.jpg";
+            document.body.appendChild(img);
+            message.textContent ="Travel to America! Your stomach will be satisfied with their food!";
+        }
 };
-document.getElementById("comfortimg1").onclick = function() {
-    answerContinent.europe++;
-    console.log(answerContinent);
-    document.getElementById('q6').style.display = "none";
-    document.getElementById('endResult').style.display = "block";
-};
-document.getElementById("comfortimg2").onclick = function() {
+document.getElementById("comfortimg1").onclick = function(){
     answerContinent.asia++;
     console.log(answerContinent);
-    document.getElementById('q6').style.display = "none";
-    document.getElementById('endResult').style.display = "block";
+    document.getElementById('q7').style.display = "none";
+    document.getElementById('endResult').style.display = "grid";
+    endResult.appendChild(message);
+    var img = document.createElement('img');
+    
+    img.classList.add("IMAGES");
+    
+ if (answerContinent.asia++ >= 3) {
+         img.src = "images/asian-food.jpg";
+            document.body.appendChild(img);
+            message.textContent ="Travel to Asian! Your stomach will be satisfied with their food!";
+        }else if(answerContinent.europe >= 3){
+            img.src = "images/europe-food.jpg";
+            message.textContent ="Travel to Europe! Your stomach will be satisfied with their food!";
+            document.body.appendChild(img);   
+        }else if(answerContinent.africa >= 3){
+            img.src = "images/african-food.png";
+            message.textContent ="Travel to African! Your stomach will be satisfied with their food!";
+            document.body.appendChild(img);  
+        }else if(answerContinent.america >= 3){
+            img.src = "images/america-food.jpg";
+            document.body.appendChild(img);
+            message.textContent ="Travel to America! Your stomach will be satisfied with their food!";
+        }
+};
+document.getElementById("comfortimg2").onclick = function() {
+    answerContinent.europe++;
+    console.log(answerContinent);
+    document.getElementById('q7').style.display = "none";
+    document.getElementById('endResult').style.display = "grid";
+    endResult.appendChild(message);
+    
+    var img = document.createElement('img');
+    
+    img.classList.add("IMAGES");
+
+   if (answerContinent.asia++ >= 3) {
+         img.src = "images/asian-food.jpg";
+            document.body.appendChild(img);
+            message.textContent ="Travel to Asian! Your stomach will be satisfied with their food!";
+        }else if(answerContinent.europe >= 3){
+            img.src = "images/europe-food.jpg";
+            message.textContent ="Travel to Europe! Your stomach will be satisfied with their food!";
+            document.body.appendChild(img);   
+        }else if(answerContinent.africa >= 3){
+            img.src = "images/african-food.png";
+            message.textContent ="Travel to African! Your stomach will be satisfied with their food!";
+            document.body.appendChild(img);  
+        }else if(answerContinent.america >= 3){
+            img.src = "images/america-food.jpg";
+            document.body.appendChild(img);
+            message.textContent ="Travel to America! Your stomach will be satisfied with their food!";
+        }
 };
 document.getElementById("comfortimg3").onclick = function() {
-    answerContinent.america++;
+    answerContinent.africa++;
     console.log(answerContinent);
-    document.getElementById('q6').style.display = "none";
-    document.getElementById('endResult').style.display = "block";
-};
-
-/*
-** End Result
-*/
-function end() {
+    document.getElementById('q7').style.display = "none";
+    document.getElementById('endResult').style.display = "grid";
+    endResult.appendChild(message);
     
-    var answerCont = [
-    "Africa",
-    "Europe",
-    "Asia",
-    "America"
-    ];
+    var img = document.createElement('img');
+  
+    img.classList.add("IMAGES");
     
-    // Creating new element for results
-    var answer = document.createElement("h4");
-    document.body.appendChild(answer);
-    
-    // To make result visable and display reuslt message
-    const result = document.getElementById('endResult');
-    const message = document.createElement("p");
-	document.body.appendChild(message); 
-    
-    if (answerContinent.africa >= 2 ){
-        answer.textContent = answerCont[0];
-        message.textContent = "Yay!!";
-        console.log("yay.");
-    }else if (answerContinent.europe >= 2 ){
-        answer.textContent = answerCont[1];
-        console.log("yay.");
-    }else if (answerContinent.asia >= 2 ){
-        answer.textContent = answerCont[2];
-        console.log("yay.");
-    }else if (answerContinent.america >= 2 ){
-        answer.textContent = answerCont[3];
-        console.log("yay.");
-    }else {
-        answer.textContent != answerCont;
-    }
-    
+ if (answerContinent.asia++ >= 3) {
+         img.src = "images/asian-food.jpg";
+            document.body.appendChild(img);
+            message.textContent ="Travel to Asian! Your stomach will be satisfied with their food!";
+        }else if(answerContinent.europe >= 3){
+            img.src = "images/europe-food.jpg";
+            message.textContent ="Travel to Europe! Your stomach will be satisfied with their food!";
+            document.body.appendChild(img);   
+        }else if(answerContinent.africa >= 3){
+            img.src = "images/african-food.png";
+            message.textContent ="Travel to African! Your stomach will be satisfied with their food!";
+            document.body.appendChild(img);  
+        }else if(answerContinent.america >= 3){
+            img.src = "images/america-food.jpg";
+            document.body.appendChild(img);
+            message.textContent ="Travel to America! Your stomach will be satisfied with their food!";
+        }
 };
